@@ -2,10 +2,14 @@
 <html lang="he" dir="rtl">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"><title>SubGrab</title></head>
 <body>
-  <header><div class="mark">S↓</div><div><h1>SubGrab</h1><p>הורדת כתוביות מהנגן</p></div></header>
-  <button id="scan">סרוק כתוביות</button>
-  <div id="status">סורק את העמוד…</div>
+  <header>
+    <div class="brandIcon"><div class="clap">▰</div><div class="bubble">SUB<span></span><span></span></div></div>
+    <div class="brand"><h1>SubGrab</h1><p>הכתוביות שלך. מיד.</p></div>
+  </header>
+  <section class="hero"><div class="pulse"></div><div><strong>סריקה אוטומטית פעילה</strong><small>SubGrab מחפש את מקור הכתוביות המלא של הנגן</small></div></section>
+  <div id="status">בודק את העמוד…</div>
   <main id="tracks"></main>
-  <footer>SRT · VTT · TTML · TextTrack</footer>
+  <button id="scan" class="secondary">סרוק שוב</button>
+  <footer>SRT · VTT · TTML · ASS/SSA · SAMI · TextTrack</footer>
   <script src="popup.js"></script>
 </body></html>
