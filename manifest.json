@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "SubGrab",
-  "version": "0.2.0",
-  "description": "Detect subtitle tracks used by web video players and export accessible tracks as SRT.",
+  "version": "0.3.0",
+  "description": "Detect accessible subtitle tracks used by web video players and export them as SRT.",
   "permissions": ["activeTab", "downloads", "scripting", "webRequest", "storage"],
   "host_permissions": ["<all_urls>"],
   "background": {"service_worker": "background.js"},
