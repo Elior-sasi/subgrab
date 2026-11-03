@@ -2,8 +2,8 @@ const candidates = new Map();
 
 function looksLikeSubtitle(details) {
   const u = details.url || '';
-  return /\.(srt|vtt|ttml|dfxp|ass|ssa)(?:[?#]|$)/i.test(u) ||
-    /(?:subtitle|subtitles|caption|captions|timedtext|texttrack|webvtt|ttml)/i.test(u);
+  return /\.(srt|vtt|ttml|dfxp|ass|ssa|smi|sami)(?:[?#]|$)/i.test(u) ||
+    /(?:subtitle|subtitles|caption|captions|timedtext|texttrack|webvtt|ttml|sami)/i.test(u);
 }
 
 chrome.webRequest.onCompleted.addListener((details) => {
